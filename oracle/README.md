@@ -15,4 +15,4 @@ This directory contains the BeatSwap Oracle—documentation and code (canisters,
   - [Mapping Guide](./metadata-mapping.md)
 
 - **Design**
-  - [Dashboard Wireframes (Figma link & notes)](./design/wireframes/README.md)
+  - [Dashboard Wireframes](./wireframes/README.md)
