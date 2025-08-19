@@ -8,4 +8,4 @@ Wireframe for the BeatSwap dashboard. The SVG below is the reference for layout 
 - `dashboard-wireframe.svg`
 
 ## Related
-- `../../README.md`
+- [Back to Oracle](../../)
