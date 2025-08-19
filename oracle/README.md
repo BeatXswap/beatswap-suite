@@ -1,12 +1,18 @@
 # BeatSwap Oracle
 
-Public documentation, schemas, and examples for the BeatSwap Oracle.
+This directory contains the BeatSwap Oracle—documentation and code (canisters, SDKs, examples, tools, tests). Use the links below to navigate.
 
-- System Architecture  
-  `/oracle/docs/system-architecture/`
+## Documents
 
-- Web2-to-Web3 Metadata Mapping  
-  `/oracle/docs/metadata-mapping/`
+- **System Architecture**
+  - [Overview](./system-architecture.md)
+  - [Canister Infrastructure & Data Schema](./canister-infrastructure.md)
+  - [Dashboard Interface](./dashboard-interface.md)
+  - [Metadata Flow](./metadata-flow.md)
+  - [Partner Platform Integration](./partner-platform-integration.md)
 
-- Dashboard Wireframes  
-  `/oracle/design/wireframes/`
+- **Web2 → Web3 Metadata Mapping**
+  - [Mapping Guide](./metadata-mapping.md)
+
+- **Design**
+  - [Dashboard Wireframes (Figma link & notes)](./design/wireframes/README.md)
