@@ -6,9 +6,19 @@
   - Query methods for visible tracks (e.g., `verification_status == "show"`), tracks by genre, per-partner unlock counts, and date/range-filtered unlock logs.
 
 ## Dashboard Functional Prototype
-- **Hosted URL:** <https://oracle.beatswap.io>
+- **Frontend URL:** https://oracle.beatswap.io
+- **Backend (Proxy) URL:** https://api.beatswap.io
+- **Proxy/middleware sources:** [../../middleware](../../middleware) 
 - **Purpose:** Front-end prototype that reads from the canister and presents real-time track metadata and basic interactions (e.g., viewing, **streaming unlock–payment info**).
-
+- **How it works**
+    - Enables partners and dashboard users to call the Oracle **without shipping an ICP SDK** to the client.
+    - The proxy converts standard **HTTP** requests into **ICP canister** calls and returns JSON responses.
+    - **Flow:** External Partner (HTTP) → Proxy (ICP SDK) → ICP Canister
+- **Example API calls**
+```bash
+    # Total unlock count
+    curl -X POST https://api.beatswap.io/oracle/getTotalUnlockCount
+```
 ## Metadata Migration Script
 - **Files:** [`./Web2MetadataMigration.mo`](./Web2MetadataMigration.mo), [`./types.mo`](./types.mo)
 - **Purpose:** Demonstrate HTTPS outcalls and JSON parsing to transform Web2 metadata/unlock logs into the on-chain format used by `MusicRegistry.mo`.
